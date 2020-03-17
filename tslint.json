@@ -1,5 +1,8 @@
 {
-  "extends": "tslint:recommended",
+  "extends": [
+    "tslint-eslint-rules",
+    "tslint:recommended"
+  ],
   "rules": {
     "array-type": false,
     "arrow-parens": false,
@@ -85,7 +88,8 @@
     "use-pipe-transform-interface": true,
     "trailing-comma": [true, { "multiline": "always", "singleline": "never" }],
     "whitespace": true,
-    "curly": true
+    "curly": true,
+    "object-curly-spacing": "always"
   },
   "rulesDirectory": [
     "codelyzer"
